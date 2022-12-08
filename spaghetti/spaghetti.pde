@@ -7,8 +7,7 @@ void setup() {
   //Display Algorithm from Hello World
   appWidth = width;
   appHeight = height;
-  largerDimension = 1000; //from display algorithm
-  smallerDimension = 800;//display algorithm
+  display();
 } //End setup
 //
 void draw() {
