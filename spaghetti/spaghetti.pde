@@ -7,7 +7,8 @@ void setup() {
   //Display Algorithm from Hello World
   appWidth = width;
   appHeight = height;
-  display();
+  display();// purpose: canvas fits in monitor and dimension size is known
+  //smaller and larger dimension are in display orientation
 } //End setup
 //
 void draw() {
