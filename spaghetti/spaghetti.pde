@@ -11,6 +11,7 @@ void setup() {
   display();// purpose: canvas fits in monitor and dimension size is known
   //smaller and larger dimension are in display orientation
   population();//values based on display
+  textSetup();
 } //End setup
 //
 void draw() {
