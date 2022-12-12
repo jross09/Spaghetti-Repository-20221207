@@ -1,10 +1,6 @@
 String spaceBar = "Press the Space Bar to continue";
 PFont font;
-color resetDefaultInk=#000000, pink=#FF038E; 
-/*night mode comment
-pink not for night mode, lots of blue
-resetDefaultInk is night mode friendly
-*/
+
 void textSetup() {
   //Minimum expectation is single font
   //
