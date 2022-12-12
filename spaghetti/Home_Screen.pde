@@ -1,5 +1,7 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
+//blue might change, starts at zero
+int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
 //
 void homeScreen() { //exists in VOID DRAW
   println("arrived at home screen"); //Testing for Splash Screen Start Button working
