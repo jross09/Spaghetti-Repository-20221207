@@ -1,4 +1,5 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
+float oneImageX, oneImageY, oneImageWidth, oneImageHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
 //blue might change, starts at zero
 int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
@@ -29,8 +30,8 @@ void backgroundWhiteScreen() {
 void backgroundImage() {
   backgroundWhiteScreen();
   tint(tintDayMode, tintDayModeOpacity);
-   //tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  //tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
   //image with tint()
-} //End backgroundImageT
+} //End backgroundImage
 // End Home Screen Subprogram
