@@ -3,7 +3,7 @@ int appWidth, appHeight, largerDimension, smallerDimension;
 Boolean OS_On=false, splashScreenStart=false;
 Boolean nightMode=false; //bonus1: populate with system clock
 //more bonus, gr 11: use API-sunrise for system clock start, API-sunset for system clock stop
-color resetDefaultInk=#000000, white=#FFFFFF, pink=#F50CA8;
+color resetDefaultInk=#FFFFFF, white=#FFFFFF, pink=#F50CA8;
 /* Night Mode Comment
  Purple not for Night Mode, full BLUE
  resetDefaultInk is Night Mode friendly
@@ -37,7 +37,8 @@ void keyPressed() {
   }//End Splash Screen SPACE Bar
   //
   //Key Bord Short Cuts
-  if (key=='Q' || key=='q') exit(); //option ESC with keyCode
+  if (key== CODED || key==ESC) exit();
+  if (key=='Q' || key=='q') exit();
   if (key=='N' || key=='n') {
     if (nightMode==false) {
       nightMode = true;
