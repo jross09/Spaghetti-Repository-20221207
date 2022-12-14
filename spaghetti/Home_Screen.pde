@@ -29,8 +29,15 @@ void backgroundWhiteScreen() {
 //
 void backgroundImage() {
   backgroundWhiteScreen();
-  tint(tintDayMode, tintDayModeOpacity);
-  //tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  //Control night mode, coloir, with IF
+  //if (nightMode==true) tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);;
+  //if (nightMode==false) tint(tintDayMode, tintDayModeOpacity);;
+  if ( nightMode==true ) {
+  tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  } else {
+    tint(tintDayMode, tintDayModeOpacity);
+  }
+  //End Night Mode Control
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
   //image with tint()
 } //End backgroundImage
