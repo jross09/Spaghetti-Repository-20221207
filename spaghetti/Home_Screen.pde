@@ -1,6 +1,7 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float oneImageX, oneImageY, oneImageWidth, oneImageHeight;
 float quitX, quitY, quitWidth, quitHeight;
+float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
 //blue might change, starts at zero
 int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
@@ -16,11 +17,15 @@ void homeScreen() { //exists in VOID DRAW
    - see case study
    - note: must have one image with aspect ratio
    */
-
+//
+//quit button move to button subprogram
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) { 
+   /*
     fill(white);
     rect( quitX, quitY, quitWidth, quitHeight ); //testing only
     noFill();
+    */
+    quitButtonImage(); //in aspect ratio
   } else {
     quitButtonText();
   }
