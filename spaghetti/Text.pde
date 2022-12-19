@@ -1,5 +1,6 @@
 String spaceBar = "Press the Space Bar to continue";
 String quit = "quit";
+String restart = "restart";
 PFont font;
 
 void textSetup() {
@@ -29,10 +30,20 @@ void quitButtonText() {
   fill(pink); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  int size = 70; //Change the number until it fits
+  int size = 30; //Change the number until it fits
   textFont(font, size); 
   text( quit, quitX, quitY, quitWidth, quitHeight); 
   noFill();
-}//End spaceBarText
+}//End quitButtonText
+//
+void restartButtonText() {
+  fill(pink); //Ink, hexidecimal copied from Color Selector
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  int size = 30; //Change the number until it fits
+  textFont(font, size); 
+  text( restart, quitX2, quitY2, quitWidth2, quitHeight2); 
+  noFill();
+}//End restartButtonText
 //
 //End Text Subprogram

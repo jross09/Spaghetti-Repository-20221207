@@ -21,7 +21,6 @@ void setup() {
   population(); //Values based on DISPLAY
   textSetup();
   imageSetup();
-  boxes();
 }//End setup
 //
 void draw() {
@@ -29,7 +28,7 @@ void draw() {
   if ( OS_On==true && splashScreenStart==false ) splashScreen(); //OS Level MOUSE Click
   if ( splashScreenStart==true ) homeScreen();
   //
-  line();
+ 
 }//End draw
 //
 void keyPressed() {
