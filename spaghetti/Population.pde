@@ -20,10 +20,20 @@ void population() {
   quitWidth2 = quitWidth;
   quitHeight2 = quitHeight;
   //
+  startButtonX = appWidth * 15/40 ;
+  startButtonY = quitY; 
+  startButtonWidth = quitWidth;
+  startButtonHeight = quitHeight;
+  //
   quitButtonImageRectX= quitX;
   quitButtonImageRectY= quitY;
   quitButtonImageRectWidth= quitWidth; //original needs debugging to adjust
   quitButtonImageRectHeight= quitHeight;
+  //
+  startButtonImageRectX= appWidth * 15/40;
+  startButtonImageRectY= startButtonY;
+  startButtonImageRectWidth= startButtonWidth; //original needs debugging to adjust
+  startButtonImageRectHeight= startButtonHeight;
   //
   lineX = appWidth * 1/3;
   lineY = appHeight;

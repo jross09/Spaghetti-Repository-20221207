@@ -2,12 +2,14 @@ float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float oneImageX, oneImageY, oneImageWidth, oneImageHeight;
 float quitX, quitY, quitWidth, quitHeight;
 float quitX2, quitY2, quitWidth2, quitHeight2;
+float startButtonX, startButtonY, startButtonWidth, startButtonHeight;
 float lineX, lineY, lineEndX, lineEndY;
 float line2X, line2Y, likeEndX2, lineEndY2, line3X, line3Y, likeEndX3, lineEndY3,
 line4X, line4Y, likeEndX4, lineEndY4;
 float restartX, restartY, restartWidth, restartHeight;
 float  restartButtonImageRectX, restartButtonImageRectY, restartButtonImageRectWidth, restartButtonImageRectHeight ;
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
+float startButtonImageRectX, startButtonImageRectY, startButtonImageRectWidth, startButtonImageRectHeight;
 int tintDayMode=255, tintDayModeOpacity=50;
 //blue might change, starts at zero
 int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
@@ -40,14 +42,26 @@ void homeScreen() { //exists in VOID DRAW
   if ( mouseX>=restartX && mouseX<=restartX+restartWidth && mouseY>=restartY && mouseY<=restartY+restartHeight ) { 
     /*
     fill(white);
-     rect( quitX, quitY, quitWidth, quitHeight ); //testing only
-     noFill();
-     */
-    restartButtonImage(); //in aspect ratio
+    rect( quitX, quitY, quitWidth, quitHeight ); //testing only
+    noFill();
+    */
+    //restartButtonImage(); //in aspect ratio
   } else {
     restartButtonText();
   }
-  rect( quitX2, quitY2, quitWidth2, quitHeight2 ); //quit button
+  rect( quitX2, quitY2, quitWidth2, quitHeight2 );
+  //
+  if ( mouseX>=startButtonX && mouseX<=startButtonX+startButtonWidth && mouseY>=startButtonY && mouseY<=startButtonY+startButtonHeight ) { 
+    /*
+    fill(white);
+    rect( quitX, quitY, quitWidth, quitHeight ); //testing only
+    noFill();
+    */
+    startButtonImage(); //in aspect ratio
+  } else {
+    startButtonText();
+  }
+  rect( startButtonX, startButtonY, startButtonWidth, startButtonHeight );
   //
   line(lineX, lineY, lineEndX, lineEndY);
   strokeWeight(2);

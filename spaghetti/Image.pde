@@ -1,10 +1,11 @@
 PImage backgroundImage, quitButtonImage;
 PImage restartImage, restartButtonImage;
+PImage startImage, startButtonImage;
 //
 void imageSetup() { //image population
   backgroundImage=loadImage("../Images Used/lover_house.jpg");
   quitButtonImage = loadImage("../Images Used/olaf.jpg");
-  restartButtonImage = loadImage("../Images Used/unicorn.jpg");
+  startButtonImage = loadImage("../Images Used/unicorn.jpg");
   //quitButtonImage is loaed here if different
 }
 //End imageSetup
@@ -58,45 +59,45 @@ void quitButtonImage() {
   //
 }//End quitButtonImage
 //
- void restartButtonImage() {
-  float restartButtonImageWidth=615, restartButtonImageHeight=615;
-  rect( restartButtonImageRectX, restartButtonImageRectY, restartButtonImageRectWidth, restartButtonImageRectHeight );
+ void startButtonImage() {
+  float startButtonImageWidth=615, startButtonImageHeight=615;
+  rect( startButtonImageRectX, startButtonImageRectY, startButtonImageRectWidth, startButtonImageRectHeight );
   //following vars must be populated or debugger error
-  float restartButtonImageWidth_Adjusted=0.0, restartButtonImageHeight_Adjusted=0.0;
-  float restartButtonImageWidth_Calculated=0.0, restartButtonImageHeight_Calculated=0.0;
+  float startButtonImageWidth_Adjusted=0.0, startButtonImageHeight_Adjusted=0.0;
+  float startButtonImageWidth_Calculated=0.0, startButtonImageHeight_Calculated=0.0;
   float largerDimension=0.0, smallerDimension=0.0;
   float imageWidthRatio=0.0, imageHeightRatio=0.0;
   //
-  if (restartButtonImageWidth >= restartButtonImageHeight) {//Images largest dimennsion, landscape or square
-    largerDimension = restartButtonImageWidth;
-    smallerDimension = restartButtonImageHeight;
+  if (startButtonImageWidth >= startButtonImageHeight) {//Images largest dimennsion, landscape or square
+    largerDimension = startButtonImageWidth;
+    smallerDimension = startButtonImageHeight;
     //
     //images matching dimension to rectangles matching dimension
-    restartButtonImageWidth_Adjusted = restartButtonImageRectWidth;
+    startButtonImageWidth_Adjusted = startButtonImageRectWidth;
     imageHeightRatio = smallerDimension / largerDimension;// value<1, main point of all
-    restartButtonImageHeight_Calculated= imageHeightRatio * restartButtonImageRectWidth;
+    startButtonImageHeight_Calculated= imageHeightRatio * startButtonImageRectWidth;
     //
     //Debugging: x-value must be centered
     float centerX=appWidth*1/2;
-    restartButtonImageRectX = centerX - restartButtonImageWidth_Adjusted * 1/2;
-    image(restartButtonImage, restartButtonImageRectX, restartButtonImageRectY, restartButtonImageWidth_Adjusted, restartButtonImageHeight_Calculated);
+    startButtonImageRectX = centerX - startButtonImageWidth_Adjusted * 1/2;
+    image(startButtonImage, startButtonImageRectX, startButtonImageRectY, startButtonImageWidth_Adjusted, startButtonImageHeight_Calculated);
     //
   } else {//portrait
-    largerDimension = restartButtonImageHeight;
-    smallerDimension = restartButtonImageWidth;
+    largerDimension = startButtonImageHeight;
+    smallerDimension = startButtonImageWidth;
     //
     //images matching dimension to rectangles matching dimension
-    restartButtonImageHeight_Adjusted = restartButtonImageRectHeight;
+    startButtonImageHeight_Adjusted = startButtonImageRectHeight;
     imageWidthRatio = smallerDimension / largerDimension;// value<1, main point of all
-    restartButtonImageWidth_Calculated= imageWidthRatio * restartButtonImageRectHeight;
+    startButtonImageWidth_Calculated= imageWidthRatio * startButtonImageRectHeight;
     //
     //Debugging: x-value must be centered
     float centerX=appWidth*1/2;
-    restartButtonImageRectX = centerX - restartButtonImageWidth_Adjusted * 1/2;
+    startButtonImageRectX = centerX - startButtonImageWidth_Adjusted * 1/2;
     //rect(); //screen to hoverover
-    image(restartButtonImage, restartButtonImageRectX, restartButtonImageRectY, restartButtonImageWidth_Adjusted, restartButtonImageHeight_Calculated);
+    image(startButtonImage, startButtonImageRectX, startButtonImageRectY, startButtonImageWidth_Adjusted, startButtonImageHeight_Calculated);
     //
-    image(restartButtonImage, restartButtonImageRectX, restartButtonImageRectY, restartButtonImageWidth_Adjusted, restartButtonImageHeight_Calculated);
+    image(startButtonImage, startButtonImageRectX, startButtonImageRectY, startButtonImageWidth_Adjusted, startButtonImageHeight_Calculated);
   }
   }//End restartButtonImage
 //End Image Subprogram
