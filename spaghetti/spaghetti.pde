@@ -21,6 +21,7 @@ void setup() {
   population(); //Values based on DISPLAY
   textSetup();
   imageSetup();
+  restartButtonImage();
 }//End setup
 //
 void draw() {
