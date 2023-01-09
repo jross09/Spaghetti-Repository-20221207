@@ -38,7 +38,7 @@ void keyPressed() {
     backgroundImage();
   }//End Splash Screen SPACE Bar
   //
-  //Key Bord Short Cuts
+  //Key Board Short Cuts
   if (key== CODED || key==ESC) exit();
   if (key=='Q' || key=='q') exit();
   if (key=='N' || key=='n') {

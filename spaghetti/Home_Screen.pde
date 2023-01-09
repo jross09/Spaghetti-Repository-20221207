@@ -39,17 +39,8 @@ void homeScreen() { //exists in VOID DRAW
   }
   rect( quitX, quitY, quitWidth, quitHeight ); //quit button
   //
-  if ( mouseX>=restartX && mouseX<=restartX+restartWidth && mouseY>=restartY && mouseY<=restartY+restartHeight ) { 
-    /*
-    fill(white);
-    rect( quitX, quitY, quitWidth, quitHeight ); //testing only
-    noFill();
-    */
-    //restartButtonImage(); //in aspect ratio
-  } else {
-    restartButtonText();
-  }
-  rect( quitX2, quitY2, quitWidth2, quitHeight2 );
+  
+  
   //
   if ( mouseX>=startButtonX && mouseX<=startButtonX+startButtonWidth && mouseY>=startButtonY && mouseY<=startButtonY+startButtonHeight ) { 
     /*
