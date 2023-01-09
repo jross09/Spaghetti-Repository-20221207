@@ -1,8 +1,8 @@
-PImage picture1;
+PImage imageOne;
 float oneX, oneY, oneWidth, oneHeight;
 //
 void buttonImages() {
-  picture1 = loadImage ("../Images Used/me!");
+  imageOne = loadImage ("../Images Used/me!");
   rect (oneX, oneY, oneWidth, oneHeight);
   image (imageOne, oneX, oneY, oneWidth, oneHeight);
   

@@ -90,7 +90,5 @@ void backgroundImage() {
   //image with tint()
 } //End backgroundImage
 //
-//picture 1
-  if () {}
 //
 // End Home Screen Subprogram
