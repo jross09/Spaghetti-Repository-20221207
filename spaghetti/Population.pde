@@ -15,11 +15,6 @@ void population() {
   quitX = centerX - quitWidth * 1/2;
   quitY = centerY - 4*quitHeight ;
   //
-  quitX2 = appWidth * 11/20 ;
-  quitY2 = quitY; 
-  quitWidth2 = quitWidth;
-  quitHeight2 = quitHeight;
-  //
   startButtonX = appWidth * 15/40 ;
   startButtonY = quitY; 
   startButtonWidth = quitWidth;

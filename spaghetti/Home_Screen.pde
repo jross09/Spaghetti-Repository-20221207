@@ -33,9 +33,9 @@ void homeScreen() { //exists in VOID DRAW
      rect( quitX, quitY, quitWidth, quitHeight ); //testing only
      noFill();
      */
-    quitButtonImage(); //in aspect ratio
+    quitButtonText(); //in aspect ratio
   } else {
-    quitButtonText();
+    quitButtonImage();
   }
   rect( quitX, quitY, quitWidth, quitHeight ); //quit button
   //
@@ -48,9 +48,9 @@ void homeScreen() { //exists in VOID DRAW
     rect( quitX, quitY, quitWidth, quitHeight ); //testing only
     noFill();
     */
-    startButtonImage(); //in aspect ratio
+    startButtonText();//in aspect ratio
   } else {
-    startButtonText();
+    startButtonImage();
   }
   rect( startButtonX, startButtonY, startButtonWidth, startButtonHeight );
   //
@@ -90,5 +90,7 @@ void backgroundImage() {
   //image with tint()
 } //End backgroundImage
 //
+//picture 1
+  if () {}
 //
 // End Home Screen Subprogram
