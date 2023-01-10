@@ -35,10 +35,15 @@ void population() {
   oneWidth = appWidth * 1/3 ;
   oneHeight = appHeight * 1/3 ;
   //
-   nextX= startWidth * 2/10;
+  twoX= startWidth * 0;
+  twoY= startHeight * 2/5;
+  twoWidth= appWidth * 3/9;
+  twoHeight= appWidth * 3/9;
+  //
+   nextX= startWidth * 1/10;
    nextY= startHeight * 5/10;
-   nextWidth= appWidth * 1/9;
-   nextHeight= appHeight * 1/9;
+   nextWidth= appWidth * 1/10;
+   nextHeight= appHeight * 1/10;
   //
   lineX = appWidth * 1/3;
   lineY = appHeight;

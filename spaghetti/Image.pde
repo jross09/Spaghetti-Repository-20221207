@@ -2,7 +2,9 @@ PImage backgroundImage, quitButtonImage;
 PImage restartImage, restartButtonImage;
 PImage startImage, startButtonImage;
 PImage imageOne, nextButtonImage;
+PImage imageTwo, pictureTwoImage;
 float oneX, oneY, oneWidth, oneHeight;
+float twoX, twoY, twoWidth, twoHeight;
 //
 void imageSetup() { 
   backgroundImage=loadImage("../Images Used/lover_house.jpg");
@@ -115,5 +117,10 @@ void nextButtonImage() {
   rect (nextX, nextY, nextWidth, nextHeight);
   image (nextButtonImage, nextX, nextY, nextWidth, nextHeight);
 }//End nextButtonImage
-//End nextButtonImage
+//
+void pictureTwo() {
+  imageTwo = loadImage ("../Images Used/delicate.jpg");
+  rect (twoX, twoY, twoWidth, twoHeight);
+  image (imageTwo, twoX, twoY, twoWidth, twoHeight);
+} //End pictureTwo
 //End Image Subprogram
