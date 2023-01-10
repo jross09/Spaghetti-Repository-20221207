@@ -36,7 +36,7 @@ void population() {
   oneHeight = appHeight * 1/3 ;
   //
    nextX= startWidth * 2/10;
-   nextY= startHeight * 2/10;
+   nextY= startHeight * 5/10;
    nextWidth= appWidth * 1/9;
    nextHeight= appHeight * 1/9;
   //

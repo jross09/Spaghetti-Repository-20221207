@@ -92,9 +92,14 @@ void backgroundImage() {
 } //End backgroundImage
 //
 void nextButtonOne() {
-  if ( mouseX>=nextX && mouseX<=nextX+nextWidth && mouseY>=nextY && mouseY<=nextY+nextHeight ) nextButtonText(); //in aspect ratio
-
+ if ( mouseX>=nextX && mouseX<=nextX+nextWidth && mouseY>=nextY && mouseY<=nextY+nextHeight ) { 
+   
+    nextButtonText();//in aspect ratio
+  } else {
+    nextButtonImage();
+  }
   rect( nextX, nextY, nextWidth, nextHeight ); //quit button
 //End nextButtonOne
 //
 // End Home Screen Subprogram
+}

@@ -1,13 +1,14 @@
 PImage backgroundImage, quitButtonImage;
 PImage restartImage, restartButtonImage;
 PImage startImage, startButtonImage;
-PImage imageOne;
+PImage imageOne, nextButtonImage;
 float oneX, oneY, oneWidth, oneHeight;
 //
-void imageSetup() { //image population
+void imageSetup() { 
   backgroundImage=loadImage("../Images Used/lover_house.jpg");
   quitButtonImage = loadImage("../Images Used/olaf.jpg");
   startButtonImage = loadImage("../Images Used/unicorn.jpg");
+  nextButtonImage = loadImage ("../Images Used/ redsquare.png");
   //quitButtonImage is loaed here if different
 }
 //End imageSetup
@@ -109,6 +110,10 @@ void pictureOne() {
   image (imageOne, oneX, oneY, oneWidth, oneHeight);
 } //End pictureOne
 //
-  
+void nextButtonImage() {
+  nextButtonImage = loadImage ("../Images Used/red-square.png");
+  rect (nextX, nextY, nextWidth, nextHeight);
+  image (nextButtonImage, nextX, nextY, nextWidth, nextHeight);
+}//End nextButtonImage
 //End nextButtonImage
 //End Image Subprogram

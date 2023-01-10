@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
-Boolean OS_On=false, splashScreenStart=false;
+Boolean OS_On=false, splashScreenStart=false, pictureOne=false;
 Boolean nightMode=false; //bonus1: populate with system clock
 //more bonus, gr 11: use API-sunrise for system clock start, API-sunset for system clock stop
 color resetDefaultInk=#FFFFFF, white=#FFFFFF, pink=#F50CA8;
@@ -58,6 +58,7 @@ void mousePressed() {
   if ( OS_On==false ) OS_On=true;//End OS Level MouseClick
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) exit();
   if ( mouseX>=startButtonX && mouseX<=startButtonX+startButtonWidth && mouseY>=startButtonY && mouseY<=startButtonY+startButtonHeight ) pictureOne();
+  if (pictureOne=true) nextButtonOne();
   //
 }//End mousePressed
 //
