@@ -3,9 +3,10 @@ float oneImageX, oneImageY, oneImageWidth, oneImageHeight;
 float quitX, quitY, quitWidth, quitHeight;
 float quitX2, quitY2, quitWidth2, quitHeight2;
 float startButtonX, startButtonY, startButtonWidth, startButtonHeight;
+float  nextX, nextY, nextWidth, nextHeight;
 float lineX, lineY, lineEndX, lineEndY;
-float line2X, line2Y, likeEndX2, lineEndY2, line3X, line3Y, likeEndX3, lineEndY3,
-line4X, line4Y, likeEndX4, lineEndY4;
+float line2X, line2Y, likeEndX2, lineEndY2, line3X, line3Y, likeEndX3, lineEndY3, 
+  line4X, line4Y, likeEndX4, lineEndY4;
 float restartX, restartY, restartWidth, restartHeight;
 float  restartButtonImageRectX, restartButtonImageRectY, restartButtonImageRectWidth, restartButtonImageRectHeight ;
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
@@ -39,15 +40,15 @@ void homeScreen() { //exists in VOID DRAW
   }
   rect( quitX, quitY, quitWidth, quitHeight ); //quit button
   //
-  
-  
+
+
   //
   if ( mouseX>=startButtonX && mouseX<=startButtonX+startButtonWidth && mouseY>=startButtonY && mouseY<=startButtonY+startButtonHeight ) { 
     /*
     fill(white);
-    rect( quitX, quitY, quitWidth, quitHeight ); //testing only
-    noFill();
-    */
+     rect( quitX, quitY, quitWidth, quitHeight ); //testing only
+     noFill();
+     */
     startButtonText();//in aspect ratio
   } else {
     startButtonImage();
@@ -90,5 +91,10 @@ void backgroundImage() {
   //image with tint()
 } //End backgroundImage
 //
+void nextButtonOne() {
+  if ( mouseX>=nextX && mouseX<=nextX+nextWidth && mouseY>=nextY && mouseY<=nextY+nextHeight ) nextButtonText(); //in aspect ratio
+
+  rect( nextX, nextY, nextWidth, nextHeight ); //quit button
+//End nextButtonOne
 //
 // End Home Screen Subprogram

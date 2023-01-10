@@ -2,6 +2,7 @@ String spaceBar = "press space to start!";
 String quit = "quit";
 String restart = "restart";
 String start = "start";
+String nextOne = "next";
 PFont font;
 
 void textSetup() {
@@ -56,4 +57,16 @@ void startButtonText() {
   text( start, startButtonX, startButtonY, startButtonWidth, startButtonHeight); 
   noFill();
 }//End startButtonText
+//
+void nextButtonText() {
+  //rect(startX, startY, startWidth, startHeight);
+  fill(pink); //Ink, hexidecimal copied from Color Selector
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  int size = 35; //Change the number until it fits
+  textFont(font, size); 
+  text( nextOne, nextX, nextY, nextWidth, nextHeight); 
+  fill(resetDefaultInk);
+  
+}//End nextButtonText
 //End Text Subprogram

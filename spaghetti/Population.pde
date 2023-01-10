@@ -30,10 +30,15 @@ void population() {
   startButtonImageRectWidth= startButtonWidth; //original needs debugging to adjust
   startButtonImageRectHeight= startButtonHeight;
   //
-  oneX = startX;
-  oneY = startY;
-  oneWidth = appWidth * 1/3;
-  oneHeight = appHeight * 1/3;
+  oneX = startWidth * 0;
+  oneY = startHeight * 0;
+  oneWidth = appWidth * 1/3 ;
+  oneHeight = appHeight * 1/3 ;
+  //
+   nextX= startWidth * 2/10;
+   nextY= startHeight * 2/10;
+   nextWidth= appWidth * 1/9;
+   nextHeight= appHeight * 1/9;
   //
   lineX = appWidth * 1/3;
   lineY = appHeight;

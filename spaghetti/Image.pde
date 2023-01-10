@@ -1,6 +1,8 @@
 PImage backgroundImage, quitButtonImage;
 PImage restartImage, restartButtonImage;
 PImage startImage, startButtonImage;
+PImage imageOne;
+float oneX, oneY, oneWidth, oneHeight;
 //
 void imageSetup() { //image population
   backgroundImage=loadImage("../Images Used/lover_house.jpg");
@@ -59,7 +61,7 @@ void quitButtonImage() {
   //
 }//End quitButtonImage
 //
- void startButtonImage() {
+void startButtonImage() {
   float startButtonImageWidth=615, startButtonImageHeight=615;
   rect( startButtonImageRectX, startButtonImageRectY, startButtonImageRectWidth, startButtonImageRectHeight );
   //following vars must be populated or debugger error
@@ -99,5 +101,14 @@ void quitButtonImage() {
     //
     image(startButtonImage, startButtonImageRectX, startButtonImageRectY, startButtonImageWidth_Adjusted, startButtonImageHeight_Calculated);
   }
-  }//End restartButtonImage
+}//End restartButtonImage
+//
+void pictureOne() {
+  imageOne = loadImage ("../Images Used/all_too_well.jpg");
+  rect (oneX, oneY, oneWidth, oneHeight);
+  image (imageOne, oneX, oneY, oneWidth, oneHeight);
+} //End pictureOne
+//
+  
+//End nextButtonImage
 //End Image Subprogram
