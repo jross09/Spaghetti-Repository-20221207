@@ -36,14 +36,19 @@ void population() {
   oneHeight = appHeight * 1/3 ;
   //
   twoX= startWidth * 0;
-  twoY= startHeight * 2/5;
-  twoWidth= appWidth * 3/9;
-  twoHeight= appWidth * 3/9;
+  twoY= startHeight * 3.3;
+  twoWidth= appWidth * 1/3;
+  twoHeight= appHeight * 1/3;
   //
-   nextX= startWidth * 1/10;
-   nextY= startHeight * 5/10;
-   nextWidth= appWidth * 1/10;
-   nextHeight= appHeight * 1/10;
+  nextX= startWidth * 1/10;
+  nextY= startHeight * 5/10;
+  nextWidth= appWidth * 1/10;
+  nextHeight= appHeight * 1/10;
+  //
+  nextTwoX= startWidth * 7/10;
+  nextTwoY= startHeight * 5/10;
+  nextTwoWidth= appWidth * 1/10;
+  nextTwoHeight= appHeight * 1/10;
   //
   lineX = appWidth * 1/3;
   lineY = appHeight;

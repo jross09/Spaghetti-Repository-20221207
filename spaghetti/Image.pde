@@ -3,6 +3,7 @@ PImage restartImage, restartButtonImage;
 PImage startImage, startButtonImage;
 PImage imageOne, nextButtonImage;
 PImage imageTwo, pictureTwoImage;
+PImage nextButtonTwoImage;
 float oneX, oneY, oneWidth, oneHeight;
 float twoX, twoY, twoWidth, twoHeight;
 //
@@ -123,4 +124,10 @@ void pictureTwo() {
   rect (twoX, twoY, twoWidth, twoHeight);
   image (imageTwo, twoX, twoY, twoWidth, twoHeight);
 } //End pictureTwo
+//
+void nextButtonTwoImage() {
+  nextButtonTwoImage = loadImage ("../Images Used/red-square.png");
+  rect (nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight);
+  image (nextButtonTwoImage, nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight);
+} //End nextButtonTwoImage()
 //End Image Subprogram

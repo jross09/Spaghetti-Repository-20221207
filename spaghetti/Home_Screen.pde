@@ -4,9 +4,9 @@ float quitX, quitY, quitWidth, quitHeight;
 float quitX2, quitY2, quitWidth2, quitHeight2;
 float startButtonX, startButtonY, startButtonWidth, startButtonHeight;
 float  nextX, nextY, nextWidth, nextHeight;
+float nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight;
 float lineX, lineY, lineEndX, lineEndY;
-float line2X, line2Y, likeEndX2, lineEndY2, line3X, line3Y, likeEndX3, lineEndY3, 
-  line4X, line4Y, likeEndX4, lineEndY4;
+float line2X, line2Y, likeEndX2, lineEndY2, line3X, line3Y, likeEndX3, lineEndY3, line4X, line4Y, likeEndX4, lineEndY4;
 float restartX, restartY, restartWidth, restartHeight;
 float  restartButtonImageRectX, restartButtonImageRectY, restartButtonImageRectWidth, restartButtonImageRectHeight ;
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
@@ -92,14 +92,25 @@ void backgroundImage() {
 } //End backgroundImage
 //
 void nextButtonOne() {
- if ( mouseX>=nextX && mouseX<=nextX+nextWidth && mouseY>=nextY && mouseY<=nextY+nextHeight ) { 
-   
+  if ( mouseX>=nextX && mouseX<=nextX+nextWidth && mouseY>=nextY && mouseY<=nextY+nextHeight ) { 
+
     nextButtonText();//in aspect ratio
   } else {
     nextButtonImage();
   }
-  rect( nextX, nextY, nextWidth, nextHeight ); //quit button
-//End nextButtonOne
-//
-// End Home Screen Subprogram
+  rect( nextX, nextY, nextWidth, nextHeight );
+} //quit button
+  //End nextButtonOne
+  //
+void nextButtonTwo() {
+  if ( mouseX>=nextTwoX && mouseX<=nextTwoX+nextTwoWidth && mouseY>=nextTwoY && mouseY<=nextTwoY+nextTwoHeight ) { 
+
+    nextButtonTwoText();//in aspect ratio
+  } else {
+    nextButtonTwoImage();
+  }
+  rect( nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight ); //quit button
 }
+  //End nextButtonTwo
+  //
+  // End Home Screen Subprogram
