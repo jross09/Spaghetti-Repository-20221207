@@ -5,6 +5,7 @@ float quitX2, quitY2, quitWidth2, quitHeight2;
 float startButtonX, startButtonY, startButtonWidth, startButtonHeight;
 float  nextX, nextY, nextWidth, nextHeight;
 float nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight;
+float nextThreeX, nextThreeY, nextThreeWidth, nextThreeHeight;
 float lineX, lineY, lineEndX, lineEndY;
 float line2X, line2Y, likeEndX2, lineEndY2, line3X, line3Y, likeEndX3, lineEndY3, line4X, line4Y, likeEndX4, lineEndY4;
 float restartX, restartY, restartWidth, restartHeight;
@@ -112,5 +113,15 @@ void nextButtonTwo() {
   rect( nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight ); //quit button
 }
   //End nextButtonTwo
+  //
+  void nextButtonThree() {
+  if ( mouseX>=nextThreeX && mouseX<=nextThreeX+nextThreeWidth && mouseY>=nextThreeY && mouseY<=nextThreeY+nextThreeHeight ) { 
+
+    nextButtonThreeText();//in aspect ratio
+  } else {
+    nextButtonThreeImage();
+  }
+  rect( nextThreeX, nextThreeY, nextThreeWidth, nextThreeHeight ); //quit button
+}
   //
   // End Home Screen Subprogram

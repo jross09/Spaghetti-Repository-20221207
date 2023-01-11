@@ -4,6 +4,7 @@ String restart = "restart";
 String start = "start";
 String nextOne = "next";
 String nextTwo = "next";
+String nextThree = "next";
 PFont font;
 
 void textSetup() {
@@ -67,7 +68,7 @@ void nextButtonText() {
   int size = 35; //Change the number until it fits
   textFont(font, size); 
   text( nextOne, nextX, nextY, nextWidth, nextHeight); 
-  fill(resetDefaultInk);
+  noFill();
 }//End nextButtonText
 //
 void nextButtonTwoText() {
@@ -78,6 +79,17 @@ void nextButtonTwoText() {
   int size = 35; //Change the number until it fits
   textFont(font, size); 
   text( nextTwo, nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight); 
-  fill(resetDefaultInk);
+  noFill();
+}
+//
+void nextButtonThreeText() {
+  //rect(startX, startY, startWidth, startHeight);
+  fill(pink); //Ink, hexidecimal copied from Color Selector
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  int size = 35; //Change the number until it fits
+  textFont(font, size); 
+  text( nextThree, nextThreeX, nextThreeY, nextThreeWidth, nextThreeHeight); 
+  noFill();
 }
 //End Text Subprogram

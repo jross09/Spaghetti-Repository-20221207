@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
-Boolean OS_On=false, splashScreenStart=false, pictureOne=false, pictureTwo=false;
+Boolean OS_On=false, splashScreenStart=false, pictureOne=false, pictureTwo=false, pictureThree= false;
 Boolean nightMode=false; //bonus1: populate with system clock
 //more bonus, gr 11: use API-sunrise for system clock start, API-sunset for system clock stop
 color resetDefaultInk=#FFFFFF, white=#FFFFFF, pink=#F50CA8;
@@ -60,7 +60,10 @@ void mousePressed() {
   if ( mouseX>=startButtonX && mouseX<=startButtonX+startButtonWidth && mouseY>=startButtonY && mouseY<=startButtonY+startButtonHeight ) pictureOne();
   if (pictureOne=true) nextButtonOne();
   if (mouseX>=nextX && mouseX<=nextX+nextWidth && mouseY>=nextY && mouseY<=nextY+nextHeight) pictureTwo();
-  if (pictureTwo=true) mouseX<=nextX && mouseX<=nextX+nextWidth && mouseY>=nextY && mouseY<=nextY+nextHeight;
+  if (pictureTwo=true) nextButtonTwo();
+  if (mouseX>=nextTwoX && mouseX<=nextTwoX+nextTwoWidth && mouseY>=nextTwoY && mouseY<=nextTwoY+nextTwoHeight) pictureThree();
+  if (pictureThree=true) nextButtonThree();
+  if (mouseX>=nextThreeX && mouseX<=nextThreeX+nextThreeWidth && mouseY>=nextThreeY && mouseY<=nextThreeY+nextThreeHeight) pictureFour();
   //
 }//End mousePressed
 //
