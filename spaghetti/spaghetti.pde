@@ -1,6 +1,13 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
-Boolean OS_On=false, splashScreenStart=false, pictureOne=false, pictureTwo=false, pictureThree= false;
+Boolean OS_On=false, splashScreenStart=false, pictureOne=false, pictureTwo=false, pictureThree= false, pictureFour=false;
 Boolean nightMode=false; //bonus1: populate with system clock
 //more bonus, gr 11: use API-sunrise for system clock start, API-sunset for system clock stop
 color resetDefaultInk=#FFFFFF, white=#FFFFFF, pink=#F50CA8;
@@ -8,6 +15,8 @@ color resetDefaultInk=#FFFFFF, white=#FFFFFF, pink=#F50CA8;
  Purple not for Night Mode, full BLUE
  resetDefaultInk is Night Mode friendly
  */
+Minim minim; //creates object to access all funtions
+AudioPlayer song1; //cretes a "Play List" variable, WAV, AIFF, AU, SND, MP3
 //
 void setup() {
   size(1500, 1000);
@@ -21,6 +30,9 @@ void setup() {
   population(); //Values based on DISPLAY
   textSetup();
   imageSetup();
+  //
+  minim = new Minim(this);
+  song1 = minim.loadFile("../Audio Used/Newsroom.mp3");
 }//End setup
 //
 void draw() {
@@ -51,13 +63,25 @@ void keyPressed() {
     backgroundImage();
   }
   }
-}//End keyPressed
+
 //
+  //PLAY PAUSE Feature
+  if ( key== 'T' || key== 't' ) {
+    if ( song1.isPlaying() ) {
+      song1.pause();
+    } else  if ( song1.position() >= song1.length()-song1.length()*1/5 ) {
+    } else {
+      song1.play();
+    
+    }//
+  } //End keyPressed
+}//
 void mousePressed() {
   //OS Level MouseClick
   if ( OS_On==false ) OS_On=true;//End OS Level MouseClick
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) exit();
   if ( mouseX>=startButtonX && mouseX<=startButtonX+startButtonWidth && mouseY>=startButtonY && mouseY<=startButtonY+startButtonHeight ) pictureOne();
+  if (pictureOne=true) song1.play();
   if (pictureOne=true) nextButtonOne();
   if (mouseX>=nextX && mouseX<=nextX+nextWidth && mouseY>=nextY && mouseY<=nextY+nextHeight) pictureTwo();
   if (pictureTwo=true) nextButtonTwo();

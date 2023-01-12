@@ -18,18 +18,16 @@ void imageSetup() {
   startButtonImage = loadImage("../Images Used/unicorn.jpg");
   nextButtonImage = loadImage ("../Images Used/ redsquare.png");
   //quitButtonImage is loaed here if different
-}
 //End imageSetup
+}
 //
-void quitButtonImage() {
-  quitButtonImage = loadImage("../Images Used/olaf.jpg");
   //rectangles largest dimension
-
   //images other dimension is scaled
   //
   //Image Dimensions
+void quitButtonImage() {
   float quitButtonImageWidth=1200, quitButtonImageHeight=1200;
-  rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
+  rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight);
   //following vars must be populated or debugger error
   float quitButtonImageWidth_Adjusted=0.0, quitButtonImageHeight_Adjusted=0.0;
   float quitButtonImageWidth_Calculated=0.0, quitButtonImageHeight_Calculated=0.0;
@@ -69,6 +67,7 @@ void quitButtonImage() {
   }
   //
 }//End quitButtonImage
+//
 //
 void startButtonImage() {
   float startButtonImageWidth=615, startButtonImageHeight=615;
@@ -110,6 +109,7 @@ void startButtonImage() {
     //
     image(startButtonImage, startButtonImageRectX, startButtonImageRectY, startButtonImageWidth_Adjusted, startButtonImageHeight_Calculated);
   }
+
 }//End restartButtonImage
 //
 void pictureOne() {
@@ -149,8 +149,9 @@ void nextButtonThreeImage() {
 } //End nextButtonTwoImage()
 //
 void pictureFour() {
-  imageFour = loadImage ("../Images Used/the_man.jpg");
+  imageFour = loadImage ("../Images Used/you_belong_with_me.jpg");
   rect (fourX, fourY, fourWidth, fourHeight);
   image (imageFour, fourX, fourY, fourWidth, fourHeight);
-} //End pictureThree
+} //End pictureFour
+//
 //End Image Subprogram

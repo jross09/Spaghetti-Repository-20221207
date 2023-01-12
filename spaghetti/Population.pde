@@ -25,7 +25,7 @@ void population() {
   quitButtonImageRectWidth= quitWidth; //original needs debugging to adjust
   quitButtonImageRectHeight= quitHeight;
   //
-  startButtonImageRectX= appWidth * 15/40;
+  startButtonImageRectX= startButtonX;
   startButtonImageRectY= startButtonY;
   startButtonImageRectWidth= startButtonWidth; //original needs debugging to adjust
   startButtonImageRectHeight= startButtonHeight;
@@ -41,14 +41,14 @@ void population() {
   twoHeight= appHeight * 1/3;
   //
   threeX= startWidth * 0;
-  threeY= startHeight * 6.7;
+  threeY= startHeight * 6.6;
   threeWidth= appWidth * 1/3;
   threeHeight= appHeight * 1/3;
   //
-  fourX= appWidth * 5;
+  fourX= appWidth * 2;
   fourY= appHeight * 3.3;
-  fourWidth= appWidth * 1/3;
-  fourHeight= appHeight * 1/3;
+  fourWidth= appWidth * 2;
+  fourHeight= appHeight * 2;
   //
   nextX= startWidth * 1/10;
   nextY= startHeight * 5/10;
@@ -64,6 +64,13 @@ void population() {
   nextThreeY= startHeight * 7;
   nextThreeWidth= appWidth * 1/10;
   nextThreeHeight= appHeight * 1/10;
+  //
+  /*
+  nextFourX=startWidth * 8;
+  nextFourY=startHeight * 5/10;
+  nextFourWidth= appWidth * 1/10;
+  nextFourHeight= appHeight * 1/10;
+  */
   //
   lineX = appWidth * 1/3;
   lineY = appHeight;
@@ -85,7 +92,6 @@ void population() {
   likeEndX4= appWidth;
   lineEndY4= line4Y;
   //
-  
 }// End population
 //
 //End Population Subprogram

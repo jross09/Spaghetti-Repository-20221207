@@ -6,15 +6,15 @@ float startButtonX, startButtonY, startButtonWidth, startButtonHeight;
 float  nextX, nextY, nextWidth, nextHeight;
 float nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight;
 float nextThreeX, nextThreeY, nextThreeWidth, nextThreeHeight;
+float nextFourX, nextFourY, nextFourWidth, nextFourHeight;
 float lineX, lineY, lineEndX, lineEndY;
 float line2X, line2Y, likeEndX2, lineEndY2, line3X, line3Y, likeEndX3, lineEndY3, line4X, line4Y, likeEndX4, lineEndY4;
 float restartX, restartY, restartWidth, restartHeight;
 float  restartButtonImageRectX, restartButtonImageRectY, restartButtonImageRectWidth, restartButtonImageRectHeight ;
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
 float startButtonImageRectX, startButtonImageRectY, startButtonImageRectWidth, startButtonImageRectHeight;
-int tintDayMode=255, tintDayModeOpacity=50;
-//blue might change, starts at zero
-int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
+int tintDayMode=255, tintDayModeOpacity=50, tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
+color lightBlue=#50B9E8;
 //
 void homeScreen() { //exists in VOID DRAW
   println("arrived at home screen"); //Testing for Splash Screen Start Button working
@@ -22,7 +22,7 @@ void homeScreen() { //exists in VOID DRAW
    - background image using tint
    - 9 evenly spaced recatngles
    - quit button and reset button (splash screen start button)
-   - in each: image, text, 2d shap, button
+   - in each: image, text, 2d shape, button
    - narative through the 9 rectangles
    - see case study
    - note: must have one image with aspect ratio
@@ -58,7 +58,7 @@ void homeScreen() { //exists in VOID DRAW
   //
   line(lineX, lineY, lineEndX, lineEndY);
   strokeWeight(2);
-  stroke(pink);
+  stroke(lightBlue);
   //
   line(line2X, line2Y, likeEndX2, lineEndY2);
   //
@@ -124,4 +124,13 @@ void nextButtonTwo() {
   rect( nextThreeX, nextThreeY, nextThreeWidth, nextThreeHeight ); //quit button
 }
   //
+  void nextButtonFour() {
+  if ( mouseX>=nextFourX && mouseX<=nextFourX+nextFourWidth && mouseY>=nextFourY && mouseY<=nextFourY+nextFourHeight ) { 
+
+    nextButtonThreeText();//in aspect ratio
+  } else {
+    nextButtonThreeImage();
+  }
+  rect( nextFourX, nextFourY, nextFourWidth, nextFourHeight ); //quit button
+}
   // End Home Screen Subprogram
