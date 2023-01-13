@@ -131,6 +131,6 @@ void nextButtonTwo() {
   } else {
     nextButtonThreeImage();
   }
-  rect( nextFourX, nextFourY, nextFourWidth, nextFourHeight ); //quit button
+  rect( nextFourX, nextFourY, nextFourWidth, nextFourHeight );
 }
   // End Home Screen Subprogram
