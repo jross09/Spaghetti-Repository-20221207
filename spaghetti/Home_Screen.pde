@@ -13,7 +13,7 @@ float restartX, restartY, restartWidth, restartHeight;
 float  restartButtonImageRectX, restartButtonImageRectY, restartButtonImageRectWidth, restartButtonImageRectHeight ;
 float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
 float startButtonImageRectX, startButtonImageRectY, startButtonImageRectWidth, startButtonImageRectHeight;
-int tintDayMode=255, tintDayModeOpacity=50, tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
+int tintDayMode=255, tintDayModeOpacity=80, tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
 color lightBlue=#50B9E8;
 //
 void homeScreen() { //exists in VOID DRAW
