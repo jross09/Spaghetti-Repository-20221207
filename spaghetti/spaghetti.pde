@@ -7,7 +7,7 @@ import ddf.minim.ugens.*;
 
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
-Boolean OS_On=false, splashScreenStart=false, pictureOne=false, pictureTwo=false, pictureThree= false, pictureFour=false;
+Boolean OS_On=false, splashScreenStart=false, pictureOne=false, pictureTwo=false, pictureThree= false, pictureFour=false, pictureFive=false;
 Boolean nightMode=false; //bonus1: populate with system clock
 //more bonus, gr 11: use API-sunrise for system clock start, API-sunset for system clock stop
 color resetDefaultInk=#FFFFFF, white=#FFFFFF, pink=#F50CA8;
@@ -88,6 +88,9 @@ void mousePressed() {
   if (mouseX>=nextTwoX && mouseX<=nextTwoX+nextTwoWidth && mouseY>=nextTwoY && mouseY<=nextTwoY+nextTwoHeight) pictureThree();
   if (pictureThree=true) nextButtonThree();
   if (mouseX>=nextThreeX && mouseX<=nextThreeX+nextThreeWidth && mouseY>=nextThreeY && mouseY<=nextThreeY+nextThreeHeight) pictureFour();
+  if (pictureFour=true) nextButtonFour();
+  if (mouseX>=nextFourX && mouseX<=nextFourX+nextFourWidth && mouseY>=nextFourY && mouseY<=nextFourY+nextFourHeight) pictureFive();
+  if (pictureFive=true) nextButtonFive();
   //
 }//End mousePressed
 //

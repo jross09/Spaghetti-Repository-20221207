@@ -45,10 +45,15 @@ void population() {
   threeWidth= appWidth * 1/3;
   threeHeight= appHeight * 1/3;
   //
-  fourX= appWidth * 2;
-  fourY= appHeight * 3.3;
-  fourWidth= appWidth * 2;
-  fourHeight= appHeight * 2;
+  fourX= startWidth * 2/3;
+  fourY= startHeight * 6.6;
+  fourWidth= appWidth * 1/3;
+  fourHeight= appHeight * 1/3;
+  //
+  fiveX= startWidth * 6.7/10;
+  fiveY= startHeight * 3.3;
+  fiveWidth= appWidth * 1/3;
+  fiveHeight= appHeight * 1/3;
   //
   nextX= startWidth * 1/10;
   nextY= startHeight * 5/10;
@@ -65,12 +70,15 @@ void population() {
   nextThreeWidth= appWidth * 1/10;
   nextThreeHeight= appHeight * 1/10;
   //
-  /*
-  nextFourX=startWidth * 8;
-  nextFourY=startHeight * 5/10;
+  nextFourX= startWidth * 7/10;
+  nextFourY= startHeight * 7;
   nextFourWidth= appWidth * 1/10;
   nextFourHeight= appHeight * 1/10;
-  */
+  //
+  nextFiveX= startWidth * 7/10;
+  nextFiveY= startHeight * 5;
+  nextFiveWidth= appWidth * 1/10;
+  nextFiveHeight= appHeight * 1/10;
   //
   lineX = appWidth * 1/3;
   lineY = appHeight;

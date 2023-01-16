@@ -5,12 +5,15 @@ PImage imageOne, nextButtonImage;
 PImage imageTwo, pictureTwoImage;
 PImage imageThree, pictureThreeImage;
 PImage imageFour, pictureFourImage;
+PImage imageFive;
 PImage nextButtonTwoImage;
 PImage nextButtonThreeImage;
+PImage nextButtonFourImage;
 float oneX, oneY, oneWidth, oneHeight;
 float twoX, twoY, twoWidth, twoHeight;
 float threeX, threeY, threeWidth, threeHeight;
 float fourX, fourY, fourWidth, fourHeight;
+float fiveX, fiveY, fiveWidth, fiveHeight;
 //
 void imageSetup() { 
   backgroundImage=loadImage("../Images Used/lover_house.jpg");
@@ -154,4 +157,15 @@ void pictureFour() {
   image (imageFour, fourX, fourY, fourWidth, fourHeight);
 } //End pictureFour
 //
+void nextButtonFourImage() {
+  nextButtonFourImage = loadImage ("../Images Used/blue_square.jpg");
+  rect (nextFourX, nextFourY, nextFourWidth, nextFourHeight);
+  image (nextButtonFourImage, nextFourX, nextFourY, nextFourWidth, nextFourHeight);
+} //End nextButtonTwoImage()
+//
+void pictureFive() {
+  imageFive = loadImage ("../Images Used/the_man.jpg");
+  rect (fiveX, fiveY, fiveWidth, fiveHeight);
+  image (imageFive, fiveX, fiveY, fiveWidth, fiveHeight );
+} //End pictureFour
 //End Image Subprogram
