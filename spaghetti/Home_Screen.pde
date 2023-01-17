@@ -8,6 +8,9 @@ float nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight;
 float nextThreeX, nextThreeY, nextThreeWidth, nextThreeHeight;
 float nextFourX, nextFourY, nextFourWidth, nextFourHeight;
 float nextFiveX, nextFiveY, nextFiveWidth, nextFiveHeight;
+float nextSixX, nextSixY, nextSixWidth, nextSixHeight;
+float nextSevenX, nextSevenY, nextSevenWidth, nextSevenHeight;
+float  nextLastX, nextLastY, nextLastWidth, nextLastHeight;
 float lineX, lineY, lineEndX, lineEndY;
 float line2X, line2Y, likeEndX2, lineEndY2, line3X, line3Y, likeEndX3, lineEndY3, line4X, line4Y, likeEndX4, lineEndY4;
 float restartX, restartY, restartWidth, restartHeight;
@@ -96,7 +99,7 @@ void backgroundImage() {
 void nextButtonOne() {
   if ( mouseX>=nextX && mouseX<=nextX+nextWidth && mouseY>=nextY && mouseY<=nextY+nextHeight ) { 
 
-    nextButtonText();//in aspect ratio
+    nextButtonText();
   } else {
     nextButtonImage();
   }
@@ -107,7 +110,7 @@ void nextButtonOne() {
 void nextButtonTwo() {
   if ( mouseX>=nextTwoX && mouseX<=nextTwoX+nextTwoWidth && mouseY>=nextTwoY && mouseY<=nextTwoY+nextTwoHeight ) { 
 
-    nextButtonTwoText();//in aspect ratio
+    nextButtonTwoText();
   } else {
     nextButtonTwoImage();
   }
@@ -118,7 +121,7 @@ void nextButtonTwo() {
   void nextButtonThree() {
   if ( mouseX>=nextThreeX && mouseX<=nextThreeX+nextThreeWidth && mouseY>=nextThreeY && mouseY<=nextThreeY+nextThreeHeight ) { 
 
-    nextButtonThreeText();//in aspect ratio
+    nextButtonThreeText();
   } else {
     nextButtonThreeImage();
   }
@@ -128,7 +131,7 @@ void nextButtonTwo() {
   void nextButtonFour() {
   if ( mouseX>=nextFourX && mouseX<=nextFourX+nextFourWidth && mouseY>=nextFourY && mouseY<=nextFourY+nextFourHeight ) { 
 
-    nextButtonThreeText();//in aspect ratio
+    nextButtonThreeText();
   } else {
     nextButtonFourImage();
   }
@@ -138,10 +141,40 @@ void nextButtonTwo() {
 void nextButtonFive() {
   if ( mouseX>=nextFiveX && mouseX<=nextFiveX+nextFiveWidth && mouseY>=nextFiveY && mouseY<=nextFiveY+nextFiveHeight ) { 
 
-    nextButtonThreeText();//in aspect ratio
+    nextButtonThreeText();
   } else {
-    nextButtonFourImage();
+    nextButtonFiveImage();
   }
   rect( nextFiveX, nextFiveY, nextFiveWidth, nextFiveHeight );
+}
+//
+void nextButtonSix() {
+  if ( mouseX>=nextSixX && mouseX<=nextSixX+nextSixWidth && mouseY>=nextSixY && mouseY<=nextSixY+nextSixHeight ) { 
+
+    nextButtonThreeText();
+  } else {
+    nextButtonSixImage();
+  }
+  rect( nextSixX, nextSixY, nextSixWidth, nextSixHeight );
+}
+//
+void nextButtonSeven() {
+  if ( pictureSix=true ) { 
+
+    nextButtonThreeText();
+  } else {
+    nextButtonThreeImage();
+  }
+  rect( nextSevenX, nextSevenY, nextSevenWidth, nextSevenHeight );
+}
+//
+void lastButton() {
+  if ( mouseX>=nextLastX && mouseX<=nextLastX+nextLastWidth && mouseY>=nextLastY && mouseY<=nextLastY+nextLastHeight ) { 
+
+    lastButtonText();
+  } else {
+    lastButtonImage();
+  }
+  rect( nextLastX, nextLastY, nextLastWidth, nextLastHeight );
 }
   // End Home Screen Subprogram

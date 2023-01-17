@@ -5,6 +5,7 @@ String start = "start";
 String nextOne = "next";
 String nextTwo = "next";
 String nextThree = "next";
+String last = "end program";
 PFont font;
 
 void textSetup() {
@@ -90,6 +91,17 @@ void nextButtonThreeText() {
   int size = 35; //Change the number until it fits
   textFont(font, size); 
   text( nextThree, nextThreeX, nextThreeY, nextThreeWidth, nextThreeHeight); 
+  noFill();
+}
+//
+void lastButtonText() {
+  //rect(startX, startY, startWidth, startHeight);
+  fill(lightBlue); //Ink, hexidecimal copied from Color Selector
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  int size = 35; //Change the number until it fits
+  textFont(font, size); 
+  text( last, nextLastX, nextLastY, nextLastWidth, nextLastHeight ); 
   noFill();
 }
 //End Text Subprogram

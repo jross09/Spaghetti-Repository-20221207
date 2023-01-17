@@ -5,15 +5,22 @@ PImage imageOne, nextButtonImage;
 PImage imageTwo, pictureTwoImage;
 PImage imageThree, pictureThreeImage;
 PImage imageFour, pictureFourImage;
-PImage imageFive;
+PImage imageFive, nextButtonFiveImage;
+PImage imageSix, nextButtonSixImage;
+PImage imageSeven, nextButtonSevenImage;
+PImage imageEight, nextButtonEightImage;
 PImage nextButtonTwoImage;
 PImage nextButtonThreeImage;
 PImage nextButtonFourImage;
+PImage imageLast;
 float oneX, oneY, oneWidth, oneHeight;
 float twoX, twoY, twoWidth, twoHeight;
 float threeX, threeY, threeWidth, threeHeight;
 float fourX, fourY, fourWidth, fourHeight;
 float fiveX, fiveY, fiveWidth, fiveHeight;
+float sixX, sixY, sixWidth, sixHeight;
+float sevenX, sevenY, sevenWidth, sevenHeight;
+float eightX, eightY, eightWidth, eightHeight;
 //
 void imageSetup() { 
   backgroundImage=loadImage("../Images Used/lover_house.jpg");
@@ -122,7 +129,7 @@ void pictureOne() {
 } //End pictureOne
 //
 void nextButtonImage() {
-  nextButtonImage = loadImage ("../Images Used/red-square.png");
+  nextButtonImage = loadImage ("../Images Used/blue_square.jpg");
   rect (nextX, nextY, nextWidth, nextHeight);
   image (nextButtonImage, nextX, nextY, nextWidth, nextHeight);
 }//End nextButtonImage
@@ -134,7 +141,7 @@ void pictureTwo() {
 } //End pictureTwo
 //
 void nextButtonTwoImage() {
-  nextButtonTwoImage = loadImage ("../Images Used/red-square.png");
+  nextButtonTwoImage = loadImage ("../Images Used/blue_square.jpg");
   rect (nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight);
   image (nextButtonTwoImage, nextTwoX, nextTwoY, nextTwoWidth, nextTwoHeight);
 } //End nextButtonTwoImage()
@@ -146,7 +153,7 @@ void pictureThree() {
 } //End pictureThree
 //
 void nextButtonThreeImage() {
-  nextButtonThreeImage = loadImage ("../Images Used/red-square.png");
+  nextButtonThreeImage = loadImage ("../Images Used/blue_square.jpg");
   rect (nextThreeX, nextThreeY, nextThreeWidth, nextThreeHeight);
   image (nextButtonThreeImage, nextThreeX, nextThreeY, nextThreeWidth, nextThreeHeight);
 } //End nextButtonTwoImage()
@@ -167,5 +174,54 @@ void pictureFive() {
   imageFive = loadImage ("../Images Used/the_man.jpg");
   rect (fiveX, fiveY, fiveWidth, fiveHeight);
   image (imageFive, fiveX, fiveY, fiveWidth, fiveHeight );
-} //End pictureFour
+} //End pictureFive
+//
+void nextButtonFiveImage() {
+  nextButtonFiveImage = loadImage ("../Images Used/blue_square.jpg");
+  rect (nextFiveX, nextFiveY, nextFiveWidth, nextFiveHeight);
+  image (nextButtonFiveImage, nextFiveX, nextFiveY, nextFiveWidth, nextFiveHeight);
+} //End nextButtonTwoImage()
+//
+void pictureSix() {
+  imageSix = loadImage ("../Images Used/lover.jpg");
+  rect (sixX, sixY, sixWidth, sixHeight);
+  image (imageSix, sixX, sixY, sixWidth, sixHeight);
+} //End pictureFive
+//
+void nextButtonSixImage() {
+  nextButtonSixImage = loadImage ("../Images Used/blue_square.jpg");
+  rect (nextSixX, nextSixY, nextSixWidth, nextSixHeight);
+  image (nextButtonSixImage, nextSixX, nextSixY, nextSixWidth, nextSixHeight);
+} //End nextButtonTwoImage()
+//
+void pictureSeven() {
+  imageSeven = loadImage ("../Images Used/me!.jpg");
+  rect (sevenX, sevenY, sevenWidth, sevenHeight);
+  image (imageSeven, sevenX, sevenY, sevenWidth, sevenHeight);
+} //End pictureFive
+//
+void nextButtonSevenImage() {
+  nextButtonSevenImage = loadImage ("../Images Used/blue_square.jpg");
+  rect (nextSevenX, nextSevenY, nextSevenWidth, nextSevenHeight );
+  image (nextButtonSevenImage, nextSevenX, nextSevenY, nextSevenWidth, nextSevenHeight );
+} //End nextButtonTwoImage()
+//
+void pictureEight() {
+  imageEight = loadImage ("../Images Used/everything_has_changed.jpg");
+  rect (eightX, eightY, eightWidth, eightHeight);
+  image (imageEight, eightX, eightY, eightWidth, eightHeight );
+} //End pictureFive
+//
+void nextButtonEightImage() {
+  nextButtonEightImage = loadImage ("../Images Used/blue_square.jpg");
+  rect (eightX, eightY, eightWidth, eightHeight );
+  image (nextButtonEightImage, eightX, eightY, eightWidth, eightHeight );
+} //End nextButtonTwoImage()
+//
+void lastButtonImage() {
+  imageLast = loadImage ("../Images Used/cats.jpg");
+  rect ( nextLastX, nextLastY, nextLastWidth, nextLastHeight );
+  image (imageLast, nextLastX, nextLastY, nextLastWidth, nextLastHeight );
+} //End pictureFive
+//
 //End Image Subprogram

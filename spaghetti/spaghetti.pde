@@ -7,7 +7,7 @@ import ddf.minim.ugens.*;
 
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
-Boolean OS_On=false, splashScreenStart=false, pictureOne=false, pictureTwo=false, pictureThree= false, pictureFour=false, pictureFive=false;
+Boolean OS_On=false, splashScreenStart=false, pictureOne=false, pictureTwo=false, pictureThree= false, pictureFour=false, pictureFive=false, pictureSix=false, pictureSeven=false, pictureEight=false;
 Boolean nightMode=false; //bonus1: populate with system clock
 //more bonus, gr 11: use API-sunrise for system clock start, API-sunset for system clock stop
 color resetDefaultInk=#FFFFFF, white=#FFFFFF, pink=#F50CA8;
@@ -91,6 +91,13 @@ void mousePressed() {
   if (pictureFour=true) nextButtonFour();
   if (mouseX>=nextFourX && mouseX<=nextFourX+nextFourWidth && mouseY>=nextFourY && mouseY<=nextFourY+nextFourHeight) pictureFive();
   if (pictureFive=true) nextButtonFive();
+  if (mouseX>=nextFiveX && mouseX<=nextFiveX+nextFiveWidth && mouseY>=nextFiveY && mouseY<=nextFiveY+nextFiveHeight ) pictureSix();
+  if (pictureSix=true) nextButtonSix();
+  if (mouseX>=nextSixX && mouseX<=nextSixX+nextSixWidth && mouseY>=nextSixY && mouseY<=nextSixY+nextSixHeight) pictureSeven();
+  if (pictureSeven=true) nextButtonSeven();
+  if (mouseX>=nextSevenX && mouseX<=nextSevenX+nextSevenWidth && mouseY>=nextSevenY && mouseY<=nextSevenY+nextSevenHeight) pictureEight();
+  if (pictureEight=true) lastButton();
+  if ( mouseX>=nextLastX && mouseX<=nextLastX+nextLastWidth && mouseY>=nextLastY && mouseY<=nextLastY+nextLastHeight ) exit();
   //
 }//End mousePressed
 //
